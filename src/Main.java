@@ -12,6 +12,12 @@ public class Main {
         employee[8] = new Employee("Ибрагимов Ибрагим Ибрагимович", 5, 31000);
         employee[9] = new Employee("Константинов Константин Константинович", 5, 32000);
 
+        employeeData();
+        printSumSalary();
+        thеSmallestSalary();
+        thеBiggestSalary();
+        everageSallary();
+        fioEmployees();
 
     }
 

@@ -90,7 +90,15 @@ public class Main {
         System.out.println("минимальная зарплата  " + smallSalary().getSalary());}
 
     public static float everageSallary() {
-        return sumSalary() / (float)employee.length;
+        int count = 0;
+        int sum = 0;
+        for (Employee employee1 : employee){
+        if (employee1 != null) {
+            count++;
+            sum += employee1.getSalary();
+        }
+        }
+        return (float) sum / (float)count;
     }
     public static void printEverageSallary() {
         System.out.println("средняя зарплата   " + everageSallary());}
